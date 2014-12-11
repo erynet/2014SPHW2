@@ -28,9 +28,9 @@ static int __init hw2_init(void){
 	struct task_struct *task;
 	struct vm_area_struct *mmap;
 	
-	if(mypid == -1){
+	if(pid == -1){
 		//모듈을 실행할때 제대로 인자를 않넣어준 경우 기본값은 -1로 값이 남아있을 것이므로 이때는 사용법 안내 메시지를 출력하고 종료한다
-		printk(KERN_INFO, "USAGE : insmod meminfo mypid=1234\n");
+		printk(KERN_INFO "USAGE : insmod meminfo mypid=1234\n");
 		return 0;
 	}
 	
