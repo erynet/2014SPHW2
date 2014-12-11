@@ -1,0 +1,1 @@
+cmd_/home/ery/Documents/hw2/meminfo.ko := ld -r -m elf_x86_64 -T /home/ery/Downloads/linux-3.14.19/scripts/module-common.lds --build-id  -o /home/ery/Documents/hw2/meminfo.ko /home/ery/Documents/hw2/meminfo.o /home/ery/Documents/hw2/meminfo.mod.o
