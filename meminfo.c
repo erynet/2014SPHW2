@@ -14,6 +14,7 @@ MODULE_PARM_DESC(mypid, "A Procee ID Variable"); // 변수 설명을 넣어준�
 static int __init hw2_init(void){
 	int input_flag = -1;
 	int data_flag = 1;
+	int pid = mypid;
 	unsigned long code_start;
 	unsigned long addr;
 	pgd_t *pgd; //global
